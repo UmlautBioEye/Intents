@@ -18,8 +18,6 @@ public class DisplayMessageActivity extends AppCompatActivity {
 
         TextView txtvwDisplay = (TextView) findViewById(R.id.txtvwDisplay);
 
-        Intent starter = getIntent();
-
         String message = "The answer is...";
 
         txtvwDisplay.setTextSize(14);
