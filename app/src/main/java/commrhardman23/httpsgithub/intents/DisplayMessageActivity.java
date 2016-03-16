@@ -18,7 +18,13 @@ public class DisplayMessageActivity extends AppCompatActivity {
 
         TextView txtvwDisplay = (TextView) findViewById(R.id.txtvwDisplay);
 
-        String message = "The answer is...";
+        String message;
+
+        if(Questions.rdobtnDrums.isChecked()) {
+            message = "The answer is drums! You are correct!";
+        } else {
+            message = "The answer is drums! Better luck next time!";
+        }
 
         txtvwDisplay.setTextSize(14);
         txtvwDisplay.setText(message);

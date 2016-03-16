@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">Intents</string>
     <string name="action_settings">Settings</string>
-    <string name="button_label">Display Message!</string>
+    <string name="button_label">Check Answer!</string>
+    <string name="answer_option_1">Clarinet</string>
+    <string name="answer_option_2">Trumpet</string>
+    <string name="answer_option_3">Drums</string>
+    <string name="answer_option_4">Piano</string>
     <string name="title_activity_display_message">DisplayMessageActivity</string>
+    <string name="question_text">What instrument does Mr. Hardman play?</string>
 </resources>

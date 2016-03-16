@@ -16,9 +16,56 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/button_label"
-        android:id="@+id/btnDisplay"
+        android:id="@+id/btnCheckAnswer"
+        android:onClick="checkAnswer"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/answer_option_1"
+        android:id="@+id/rdobtnClarinet"
+        android:layout_marginTop="131dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="98dp"
-        android:onClick="displayMessage" />
+        android:layout_alignLeft="@+id/txtvwQuestion"
+        android:layout_alignStart="@+id/txtvwQuestion" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/answer_option_2"
+        android:id="@+id/rdobtnTrumpet"
+        android:layout_alignTop="@+id/rdobtnClarinet"
+        android:layout_alignRight="@+id/txtvwQuestion"
+        android:layout_alignEnd="@+id/txtvwQuestion" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/answer_option_3"
+        android:id="@+id/rdobtnDrums"
+        android:layout_below="@+id/rdobtnClarinet"
+        android:layout_alignLeft="@+id/rdobtnClarinet"
+        android:layout_alignStart="@+id/rdobtnClarinet"
+        android:layout_marginTop="36dp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/answer_option_4"
+        android:id="@+id/rdobtnPiano"
+        android:layout_alignBottom="@+id/rdobtnDrums"
+        android:layout_alignLeft="@+id/rdobtnTrumpet"
+        android:layout_alignStart="@+id/rdobtnTrumpet" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question_text"
+        android:id="@+id/txtvwQuestion"
+        android:layout_marginBottom="28dp"
+        android:textColor="#000000"
+        android:layout_above="@+id/rdobtnTrumpet"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
